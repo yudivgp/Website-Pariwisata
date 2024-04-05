@@ -1,0 +1,676 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.nav{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #333;
+    color: whitesmoke;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.nav a{
+    color: whitesmoke;
+}
+
+.nav a:hover{
+    color:#333;
+    background-color: aquamarine;
+}
+
+.wisata:hover .fa-chevron-down{
+    transform: rotate(-90deg);
+}
+
+.fa-chevron-down{
+    transform: rotate(0deg);
+    transition: 300ms;
+}
+
+.data-list{
+    margin-left: 10%;
+    padding-top: 5px;
+}
+
+.data-list li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    
+}
+
+.logo{
+    margin-left: 25px;
+    color: orangered;
+}
+
+.list{
+    display: none;
+    position: absolute;
+    font-size: small;
+    background-color: #333;
+    padding-top: 10px;
+    padding-right: 1px;
+    padding-bottom: 10px;
+}
+
+.list li{
+    display: block;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    color: whitesmoke;
+}
+
+.wisata:hover .list{
+    display: block;
+}
+
+.data-list a{
+    text-decoration: none;
+}
+
+.list li:hover{
+    color: rgb(115, 255, 0);
+}
+
+
+/*Header================*/
+
+.header{
+    display: flex;
+}
+
+.des-header{
+    width: 55%;
+    margin: auto;
+}
+
+.des-header p{
+    text-align: center;
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+    color: #0a65bb;
+    margin-bottom: 10px;
+}
+
+.des-header h1{
+    font-family: sans-serif;
+    color: rgb(15, 211, 201);
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: #6e6d6d;
+}
+
+.audio{
+    width: 10px; /* Atur lebar */
+    height: auto; /* Atur tinggi otomatis agar proporsional */
+    position: absolute; /* Atur posisi absolut */
+    top: 80%; /* Posisi vertikal */
+    left: 10%; /* Posisi horizontal*/
+    transform: translate(-50%, -50%); /* Pusatkan elemen */
+}
+
+.gambar img{
+    width: 100%;
+    height: 100vh;
+}
+
+/*footer==================*/
+.footer{
+    background-color: #333;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    position:relative;
+}
+
+.footer h2{
+    font-size: small;
+    color: whitesmoke;
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* bg-card============*/
+.bg-card{
+    background-color: aquamarine;
+    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 350px;
+    height: 280px;
+    margin: auto;
+    margin-left: 60px;
+    margin-bottom: 5px;
+}
+
+.card :hover{
+    box-shadow: 0px 0px 10px #333;
+    transition: 300ms;
+}
+
+.card :hover img{
+    transform: scale(1.5);
+    transition: 2s;
+}
+
+.gambar-card{
+    width: 350px;
+    height: 200px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.gambar-card img{
+    width: 100%;
+    height: 100%;
+}
+
+.des-card{
+    padding: 2px;
+}
+
+.bg-card a{
+    text-decoration: none;
+    color: rgba(31, 18, 211, 0.897);
+    text-align: center;
+}
+
+.des-card h2{
+    margin-bottom: 5px;
+}
+
+.des-card p{
+    color: #333;
+}
+
+/*======WISALAM===================*/
+
+.header-wisalam{
+    display: flex;
+}
+
+.des-header-wisalam{
+    width: 55%;
+    margin: auto;
+}
+
+.des-header-wisalam p{
+    text-align: center;
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+    color: #0a65bb;
+    margin-bottom: 10px;
+}
+
+.des-header-wisalam h1{
+    font-family: sans-serif;
+    color: rgb(15, 211, 201);
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: #6e6d6d;
+}
+
+.des-header-wisalam h2{
+    font-family:sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(255, 123, 0);
+    margin-top: 10px;
+}
+
+.gambar-wisalam img{
+    width: 100%;
+    height: 50vh;
+}
+
+
+/*container*/
+.container{
+    border: 1px solid red;
+    width: 70%;
+
+}
+
+.content-wisalam h1{
+    color: #0a65bb;
+    margin-top: 10px;
+}
+
+/* ==CARD WISALAM============*/
+.bg-card-wisalam{
+    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.card-wisalam{
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.card-wisalam :hover{
+    box-shadow: 0px 0px 10px #333;
+    transition: 300ms;
+}
+
+.card-wisalam :hover img{
+    transform: scale(1.5);
+    transition: 2s;
+}
+
+.gambar-card-wisalam{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.gambar-card-wisalam img{
+    width: 100%;
+    height: 100%;
+}
+
+.des-card-wisalam{
+    padding: 2px;
+    background-color: aquamarine;
+}
+
+.bg-card-wisalam a{
+    text-decoration: none;
+    color: rgba(31, 18, 211, 0.897);
+    text-align: center;
+}
+
+.des-card-wisalam h2{
+    margin-bottom: 5px;
+    font-size: medium;
+}
+
+
+/*======WISJARAH===================*/
+
+.header-wisjarah{
+    display: flex;
+}
+
+.des-header-wisjarah{
+    width: 55%;
+    margin: auto;
+}
+
+.des-header-wisjarah p{
+    text-align: center;
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+    color: #0a65bb;
+    margin-bottom: 10px;
+}
+
+.des-header-wisjarah h1{
+    font-family: sans-serif;
+    color: rgb(15, 211, 201);
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: #6e6d6d;
+}
+
+.des-header-wisjarah h2{
+    font-family:sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    color: rgb(255, 123, 0);
+    margin-top: 10px;
+}
+
+.gambar-wisjarah img{
+    width: 100%;
+    height: 60vh;
+}
+
+
+/*container*/
+.container{
+    border: 1px solid red;
+    width: 70%;
+
+}
+
+.content-wisjarah h1{
+    color: #0a65bb;
+    margin-top: 10px;
+}
+
+/* ==CARD WISALAM============*/
+.bg-card-wisjarah{
+    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.card-wisjarah{
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.card-wisjarah :hover{
+    box-shadow: 0px 0px 10px #333;
+    transition: 300ms;
+}
+
+.card-wisjarah :hover img{
+    transform: scale(1.5);
+    transition: 2s;
+}
+
+.gambar-card-wisjarah{
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.gambar-card-wisjarah img{
+    width: 100%;
+    height: 100%;
+}
+
+.des-card-wisjarah{
+    padding: 2px;
+    background-color: aquamarine;
+}
+
+.bg-card-wisjarah a{
+    text-decoration: none;
+    color: rgba(31, 18, 211, 0.897);
+    text-align: center;
+}
+
+.des-card-wisjarah h2{
+    margin-bottom: 5px;
+    font-size: medium;
+}
+
+
+/*Deskripsi desalam======*/
+
+.desalam{
+    padding-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.header-wisalam2{
+    display: flex;
+}
+
+.gambar-wisalam2 img{
+    width: 100%;
+    height: 30vh;
+}
+
+.des-header-wisalam2{
+    width: 55%;
+    margin: auto;
+    text-decoration: none;
+}
+
+.des-header-wisalam2 h1{
+    font-family: sans-serif;
+    color: rgb(15, 211, 201);
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: #6e6d6d;
+    text-decoration: none;
+}
+
+
+/*Deskripsi desjarah======*/
+
+.desjarah{
+    padding-bottom: 5px;
+    text-align: center;
+    width: 100%;
+}
+
+.header-wisjarah2{
+    display: flex;
+}
+
+.gambar-wisjarah2 img{
+    width: 100%;
+    height: 30vh;
+}
+
+.des-header-wisjarah2{
+    width: 55%;
+    margin: auto;
+    text-decoration: none;
+}
+
+.des-header-wisjarah2 h1{
+    font-family: sans-serif;
+    color: rgb(15, 211, 201);
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: #6e6d6d;
+    text-decoration: none;
+}
+
+
+/*=====Style CONTACT=====*/
+
+.head-contact{
+    display: flex;
+}
+
+.des-contact{
+    width: 55%;
+    margin: auto;
+}
+
+.des-contact p{
+    text-align: center;
+    font-size: 2rem;
+    font-family:'Courier New', Courier, monospace;
+    color: #0a65bb;
+    margin-bottom: 10px;
+}
+
+.des-contact h1{
+    font-family: sans-serif;
+    color: rgb(15, 211, 201);
+    font-size: 4rem;
+    text-align: center;
+    text-shadow: #6e6d6d;
+}
+
+.content-contact{
+background-color: aquamarine;
+text-decoration: none;
+}
+
+.content-contact h2{
+    font-family:sans-serif;
+    font-size: 2rem;
+    color: rgb(255, 123, 0);
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.content-contact ul{
+    padding-left: 30px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.content-contact ul li{
+    font-size: 1rem; 
+    padding-bottom: 10px;   
+}
+
+.content-contact ul li a{
+text-decoration: none;  
+}
+
+.content-contact p{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: medium;
+}
+
+.gambar-contact img{
+    width: 100%;
+    height: 50vh;
+}
+
+
+/* bg-card-DESKRIPSI============*/
+.bg-card-desk{
+    background-color: aquamarine;
+    padding-top: 2vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin:auto;
+    flex-wrap: wrap;
+}
+
+.card-desk{
+    width: 700px;
+    height: 300px;
+    margin: auto;
+    margin-left: 60px;
+    margin-bottom: 5px;
+}
+
+.card-desk :hover{
+    box-shadow: 0px 0px 10px #333;
+    transition: 300ms;
+}
+
+.card-desk :hover img{
+    transform: scale(1.5);
+    transition: 2s;
+}
+
+.gambar-card-desk{
+    width: 700px;
+    height: 250px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.gambar-card-desk img{
+    width: 100%;
+    height: 100%;
+}
+
+.des-card-desk{
+    padding: 2px;
+}
+
+.bg-card-desk a{
+    text-decoration: none;
+    color: rgba(31, 18, 211, 0.897);
+    text-align: center;
+}
+
+.des-card-desk h2{
+    margin-bottom: 5px;
+}
+
+.des-card-desk p{
+    color: #333;
+}
+
+.dok-deskripsi{
+    color: rgb(3, 83, 83);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+/*====Style ABOUT=======*/
+.header-about{
+    display: flex;
+}
+
+.des-header-about{
+    width: 55%;
+    margin: auto;
+}
+
+.des-header-about p{
+    text-align: center;
+    font-size: 1.2rem;
+    font-family:'Courier New', Courier, monospace;
+    color: #0a65bb;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.des-header-about h1{
+    font-family: sans-serif;
+    color: rgb(15, 211, 201);
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: #6e6d6d;
+    margin-top: 20px;
+}
+
+.des-header-about h2{
+    font-family:sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(255, 123, 0);
+    margin-top: 10px;
+}
+
+.gambar-about img{
+    width: 100%;
+    height: 50vh;
+}
+
+.biodata{
+    background-color: aquamarine;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.biodata p{
+    font-family: sand-serif;
+    font-size: 2rem;
+    color: rgb(4, 124, 124);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-style: bold;
+}
